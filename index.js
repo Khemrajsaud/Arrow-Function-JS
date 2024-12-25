@@ -1,38 +1,47 @@
-// arrow function = a concise way to write function expressions good for simple function thatyou use only once (parameters) => some code
+// object = A collection of related proparties and/or methodss
+// can represent real world object (people , products, places)
+// object = {key:value,
+// function()}
 
-// const hello = function(){
-//     console.log("hello");
-    
-// }
-// hello()
+const person1 = {
+firstNam : "khemraj",
+lastNam : "saud",
+age: 20,
+isEmployee: true,
+sayHello:  ()=>{console.log("hello worlld")},
+eat: function(){console.log("eat some food");
 
-const hello = (name, age) =>{
-    console.log(`hello ${name} `);
-    console.log(`your age is ${age}`);
-    
-    
 }
-hello("khemraj",20)//this is function
 
-setTimeout(function(){
-    console.log("world");
-    
-},3000)
+ 
+}
+const person2 = {
+    firstNam : "petric",
+    lastNam : "star",
+    age: 40,
+    isEmployee: false,
+    sayHello: ()=>{
+        console.log("hello world collecation the information");
+        
+    },
+    eat: ()=>{
+        console.log("eat bargar");
+        
+    }
+    }
+// console.log(person1.firstNam);
+// console.log(person1.lastNam);
+// console.log(person1.age);
+// console.log(person1.isEmployee);
 
-setTimeout( ()=> console.log("hello"),3000);
-
-const number = [2,3,4,5,6,7]
-const square =number.map((element)=> Math.pow(element,2))
-const queb = number.map((element)=> Math.pow(element,3))
-const evenNum = number.filter((element)=> element % 2 === 0)
-const oddNum = number.filter((element) => element % 2 !== 0)
-
-const Total = number.reduce((accumelator, element)=> accumelator + element)
-console.log(square);
-console.log(queb);
-console.log((evenNum));
-console.log(oddNum);
-console.log(Total);
+// console.log(person2.firstNam);
+// console.log(person2.lastNam);
+// console.log(person2.age);
+// console.log(person2.isEmployee);
+person1.sayHello() 
+person1.sayHello()
+person1.eat()
+person2.eat()
 
 
 
